@@ -1,0 +1,27 @@
+.teclado {
+  display: grid;
+  grid-template-columns: 130px 130px 130px;
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+.tecla {
+  background-color: #73b349;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  box-shadow: 0 10px #966c4a;
+}
+
+.tecla:hover {
+  background: #509026;
+}
+.tecla:active {
+  background-color: #509026;
+  box-shadow: 0 1px #666;
+  transform: translateY(10px);
+}
+
+.face {
+  width: 100px;
+}

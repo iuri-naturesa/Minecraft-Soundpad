@@ -1,0 +1,78 @@
+body {
+  background: #b2e7fa;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  padding-top: 3em;
+  padding-bottom: 6em;
+}
+
+.disc {
+  display: grid;
+  justify-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 40px;
+}
+.linkes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-right: 30px;
+}
+.logo {
+  max-width: 600px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer-bg {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100vw;
+  padding: 60px;
+  background-image: url("../imagem/grassblock.png");
+  background-size: 120px;
+  background-repeat: repeat-x;
+}
+.link-github {
+  width: 70px;
+  border: 2px dashed transparent;
+  padding: 5px;
+  transition: 0.4s;
+}
+.link-beacon {
+  width: 160px;
+  padding-right: 20px;
+  border: 2px dashed transparent;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.font {
+  font-size: 1.5rem;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 0.1rem;
+}
+
+.link-github:hover {
+  border: 2px dashed rgb(71, 71, 71);
+}
+.link-beacon:hover {
+  border: 2px dashed rgb(71, 71, 71);
+}

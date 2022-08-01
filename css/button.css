@@ -25,3 +25,29 @@
 .face {
   width: 100px;
 }
+
+@media (max-width: 500px) {
+  .tecla {
+    height: 100px;
+    width: 100px;
+  }
+  .teclado {
+    grid-template-columns: 100px 100px 100px;
+  }
+  .teclado img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tecla {
+    height: 75px;
+    width: 75px;
+  }
+  .teclado {
+    grid-template-columns: 80px 80px 80px;
+  }
+  .teclado img {
+    max-width: 55px;
+  }
+}

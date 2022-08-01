@@ -21,6 +21,7 @@ body {
   justify-content: flex-end;
   gap: 20px;
   padding-right: 40px;
+  padding-top: 40px;
 }
 .linkes {
   display: grid;
@@ -75,4 +76,29 @@ body {
 }
 .link-beacon:hover {
   border: 2px dashed rgb(71, 71, 71);
+}
+
+@media (max-width: 800px) {
+  .disc {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-bg {
+    width: 100vw;
+    padding: 50px;
+    background-image: url("../imagem/grassblock.png");
+    background-size: 100px;
+    background-repeat: repeat-x;
+  }
+}
+@media (max-width: 400px) {
+  .footer-bg {
+    width: 100vw;
+    padding: 30px;
+    background-image: url("../imagem/grassblock.png");
+    background-size: 70px;
+    background-repeat: repeat-x;
+  }
 }

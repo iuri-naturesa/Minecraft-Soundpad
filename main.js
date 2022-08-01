@@ -1,15 +1,28 @@
-function tocaSom(idMobSom) {
-  document.querySelector(idMobSom).play();
+let audioBaixo = document.querySelectorAll(".volBaixo");
+
+for (let i = 0; i < audioBaixo.length; i++) {
+  if (i === 0) {
+    audioBaixo[i].volume = 0.1;
+  } else {
+    audioBaixo[i].volume = 0.3;
+  }
 }
 
-const listaTecla = document.querySelectorAll(".tecla");
+function initSom() {
+  function tocaSom(idMobSom) {
+    document.querySelector(idMobSom).play();
+  }
 
-for (let i = 0; i < listaTecla.length; i++) {
-  const tecla = listaTecla[i];
-  const mobFace = tecla.classList[1];
-  const mobSom = `#som_${mobFace}`;
+  const listaTecla = document.querySelectorAll(".tecla");
 
-  tecla.onclick = function () {
-    tocaSom(mobSom);
-  };
+  for (let i = 0; i < listaTecla.length; i++) {
+    const tecla = listaTecla[i];
+    const mobFace = tecla.classList[1];
+    const mobSom = `#som_${mobFace}`;
+
+    tecla.onclick = function () {
+      tocaSom(mobSom);
+    };
+  }
 }
+initSom();

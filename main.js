@@ -1,12 +1,15 @@
-let audioBaixo = document.querySelectorAll(".volBaixo");
+function initVolume() {
+  let audioBaixo = document.querySelectorAll(".volBaixo");
 
-for (let i = 0; i < audioBaixo.length; i++) {
-  if (i === 0) {
-    audioBaixo[i].volume = 0.1;
-  } else {
-    audioBaixo[i].volume = 0.3;
+  for (let i = 0; i < audioBaixo.length; i++) {
+    if (i === 0) {
+      audioBaixo[i].volume = 0.1;
+    } else {
+      audioBaixo[i].volume = 0.3;
+    }
   }
 }
+initVolume();
 
 function initSom() {
   function tocaSom(idMobSom) {
